@@ -7,8 +7,13 @@ var nameMode = document.getElementById("name-mode");
 var tema = localStorage.getItem("theme") || "Dark";
 
 function initCss() {
-  if (tema === "Dark") cssSheet.href = "./styles/dark_theme.css";
-  else cssSheet.href = "./styles/light_theme.css";
+  if (tema === "Dark") {
+    buttonBall.style.left = "0px";
+    cssSheet.href = "./styles/dark_theme.css";
+  } else {
+    cssSheet.href = "./styles/light_theme.css";
+    buttonBall.style.left = "18px";
+  }
 }
 
 changeButton.addEventListener("click", function () {
