@@ -4,6 +4,7 @@ body {
     font-size: 3.5vw;
     font-family: 'Inter', sans-serif;
     position: absolute;
+    transition: all 0.3s;
 }
 
 h1 {
