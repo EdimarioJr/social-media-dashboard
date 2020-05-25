@@ -1,0 +1,73 @@
+@import url(./common.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(230, 17%, 14%);
+    color: white;
+}
+
+
+h3,
+h4 {
+    color: hsl(228, 34%, 66%);
+}
+
+body::before {
+    content: "";
+    display: block;
+    width: 100vw;
+    height: 30vh;
+    background-color: hsl(232, 19%, 15%);
+    position: absolute;
+    z-index: 0;
+}
+
+#theme-button {
+    background-image: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+
+.grid-cards__card {
+    background-color: hsl(228, 28%, 20%);
+}
+
+.grid-stats__card {
+    background-color: hsl(228, 28%, 20%);
+}
+
+
+@media(min-width: 1000px) {
+    body {
+        font-size: 1vw;
+    }
+
+    .grid-cards {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .grid-stats {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+@media(min-width: 600px) and (max-width: 999px) {
+    body {
+        font-size: 1.5vw;
+    }
+
+    .grid-cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .grid-stats {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
