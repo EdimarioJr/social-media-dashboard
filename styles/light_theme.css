@@ -32,35 +32,3 @@ h4 {
     background-color: hsl(227, 47%, 96%);
 }
 
-
-@media(min-width: 1000px) {
-    body {
-        font-size: 1vw;
-    }
-
-    .grid-cards {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 1fr;
-    }
-
-    .grid-stats {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
-}
-
-@media(min-width: 600px) and (max-width: 999px) {
-    body {
-        font-size: 1.5vw;
-    }
-
-    .grid-cards {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
-
-    .grid-stats {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr 1fr 1fr;
-    }
-}
